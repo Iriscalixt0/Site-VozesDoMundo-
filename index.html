@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Declaração do charset para garantir a correta exibição dos caracteres especiais em português -->
+    <meta charset="UTF-8">
+    <!-- Meta tag de viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página, que será exibido na aba do navegador -->
+    <title>Vozes do Mundo</title>
+    <!-- Link para o arquivo de estilo CSS, que define a aparência da página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="banner">
+        <!-- Imagem de banner que aparece acima do menu de navegação -->
+        <img src="vozes.png" alt="Banner Vozes do Mundo" class="banner-img">
+        
+        <!-- Menu de navegação com fundo verde -->
+        <nav>
+            <ul class="menu">
+                <!-- Itens do menu que redirecionam para as seções correspondentes da página -->
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Sobre o projeto</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <!-- Seção contendo o formulário de inscrição -->
+            <section class="form-container">
+                <form class="formulario">
+                   <!-- Título do formulário, chamando a atenção para o propósito do site -->
+                   <h1>Dê Voz ao Seu Talento: Aprenda Música, Inspire o Mundo!</h1> 
+                    <!-- Campo para o nome completo do usuário -->
+                    <div class="form-campo">
+                        <label for="nome1">Nome completo</label>
+                        <input type="text" id="nome1" name="seunome" placeholder="Digite seu nome completo">
+                    </div>
+                
+                    <!-- Campo para o e-mail do usuário -->
+                    <div class="form-campo">
+                        <label for="email1">E-mail</label>
+                        <input type="email" id="email1" name="seuemail" placeholder="Digite seu email">
+                    </div>
+                
+                    <!-- Campo para o telefone do usuário -->
+                    <div class="form-campo">
+                        <label for="seunumber1">Telefone</label>
+                        <input type="tel" id="seunumber1" name="seunumber" placeholder="Digite seu telefone">
+                    </div>
+                
+                    <!-- Campo para selecionar o estado do usuário -->
+                    <div class="form-campo">
+                        <label for="e1">Estado</label>
+                        <select name="estado" id="e1">
+                            <!-- Opção inicial que instrui o usuário a selecionar um estado -->
+                            <option value="estadosbr" disabled selected>Estado</option>
+                            <!-- Opções de estados disponíveis -->
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="pr">Pernambuco</option>
+                        </select>
+                    </div>
+                
+                    <!-- Botão para submeter o formulário -->
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <!-- Seção com o conteúdo textual sobre o projeto -->
+            <section class="text-container">
+                <section>
+                    <!-- Título da seção sobre o impacto da Vozes do Mundo -->
+                    <h2>Como a Vozes do Mundo Transforma Vidas</h2>
+                    <!-- Descrição do propósito e impacto da escola de música -->
+                    <p>A Vozes do Mundo é uma escola de música comprometida com a transformação social por meio da educação musical de qualidade. Nosso propósito vai além do ensino técnico: promovemos o acesso à arte, estimulamos o desenvolvimento pessoal e criamos caminhos para que nossos alunos possam atuar profissionalmente no universo da música.</p>
+                </section>
+
+                <!-- Linha horizontal personalizada para separar as seções -->
+                <hr class="linha-customizada">
+
+                <section>
+                    <!-- Botões que convidam o usuário a explorar diferentes aspectos do projeto -->
+                    <button>Comunidade Vozes do Mundo</button>
+                    <!-- Descrição sobre a missão de conectar pessoas por meio da música -->
+                    <p>Acreditamos que a música tem o poder de conectar pessoas e ampliar horizontes. Por isso, oferecemos formação musical acessível, contribuindo para a inclusão sociocultural e para a ascensão de talentos que, muitas vezes, não teriam acesso a uma educação artística formal.</p>
+
+                    <button>Nossa metodologia</button>
+                    <!-- Descrição sobre a metodologia de ensino adotada pela escola -->
+                    <p>Adotamos uma metodologia centrada na prática, na escuta ativa e na vivência musical. Os alunos aprendem por meio de aulas dinâmicas, experiências em grupo, recitais e projetos colaborativos que incentivam a criatividade, a disciplina e o desempenho técnico contínuo.</p>
+
+                    <button>Nossos alunos</button>
+                    <!-- Descrição do impacto positivo na vida dos alunos -->
+                    <p>Na Vozes do Mundo, nossos alunos são protagonistas de suas jornadas. Proporcionamos um ambiente acolhedor, democrático e tecnicamente estruturado, no qual cada pessoa pode explorar seu potencial musical e transformar sua realidade por meio da arte.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé da página com direitos autorais -->
+    <footer>
+        <p>&copy;Vozes do Mundo. Todos os Direitos Reservados.</p>
+    </footer>
+</body>
+</html>

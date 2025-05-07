@@ -1,0 +1,202 @@
+/* Resetando margens e padding para garantir consistência em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no cálculo de largura e altura */
+}
+
+/* Estilos globais para o corpo da página */
+body {
+    font-family: 'Inter', sans-serif; /* Fonte padrão do site */
+    background-color: #000000; /* Cor de fundo preta */
+    color: #ffffff; /* Texto branco */
+    line-height: 1.4; /* Espaçamento entre linhas de texto */
+}
+
+/* Estilos para a imagem do banner */
+.banner-img {
+    width: 100%; /* A imagem ocupa toda a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Preenche a área do container sem distorcer a imagem */
+    max-height: 100vh; /* Limita a altura máxima da imagem à altura da tela */
+}
+
+/* Estilos para o menu de navegação com fundo verde */
+nav {
+    background-color: #2b7200; /* Cor de fundo verde para o menu */
+    width: 100%; /* Ocupa toda a largura */
+    padding: 1rem; /* Espaçamento interno ao redor do menu */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza o menu na tela */
+}
+
+/* Estilos para a lista do menu */
+.menu {
+    display: flex; /* Exibe os itens do menu em linha */
+    gap: 3rem; /* Espaçamento entre os itens */
+    list-style: none; /* Remove as marcações de lista */
+    font-size: larger; /* Aumenta o tamanho da fonte dos itens do menu */
+}
+
+/* Estilos para os links do menu */
+.menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #ffffff; /* Cor do texto branco */
+    font-weight: 500; /* Peso da fonte */
+    transition: color 0.4s ease; /* Transição suave na troca de cor */
+}
+
+/* Efeito hover para os links do menu */
+.menu a:hover {
+    color: #ff5258; /* Cor do texto muda para um tom de vermelho */
+}
+
+/* Container principal que organiza o formulário e o conteúdo */
+.content-container {
+    display: flex; /* Exibe o conteúdo em linha */
+    justify-content: space-between; /* Espaçamento igual entre o formulário e o conteúdo */
+    gap: 2rem; /* Espaçamento entre os itens */
+    padding: 2rem; /* Espaçamento interno */
+}
+
+/* Estilos para o formulário */
+.formulario {
+    display: flex;
+    flex-direction: column; /* Exibe os campos do formulário em coluna */
+    gap: 1.5rem; /* Espaçamento entre os campos */
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 2rem 0; /* Margem superior e inferior */
+    padding: 1.5rem; /* Espaçamento interno do formulário */
+    background-color: #111; /* Cor de fundo escura para o formulário */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 0 12px rgba(0, 231, 50, 0.2); /* Sombras verdes suaves */
+}
+
+/* Título do formulário */
+.formulario h1 {
+    color: #00e732; /* Cor do texto verde */
+    font-size: 2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilos para cada campo de input no formulário */
+.form-campo {
+    display: flex; /* Exibe os labels e inputs em coluna */
+    flex-direction: column;
+}
+
+/* Estilos para os labels dentro do formulário */
+.form-campo label {
+    margin-bottom: 0.5rem; /* Margem inferior */
+    color: #00e732; /* Cor verde para os labels */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estilos para os campos de entrada (input e select) */
+.form-campo input,
+.form-campo select {
+    padding: 0.75rem 1rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: 1px solid #333; /* Borda cinza escura */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branco */
+    transition: border-color 0.3s ease; /* Transição suave para a borda */
+}
+
+/* Estilos para o texto do placeholder nos campos de entrada */
+.form-campo input::placeholder {
+    color: #777; /* Cor cinza para o texto do placeholder */
+}
+
+/* Estilos para quando o campo de entrada é focado */
+.form-campo input:focus,
+.form-campo select:focus {
+    border-color: #00e732; /* Borda verde ao focar no campo */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilos para o botão de envio do formulário */
+button[type="submit"] {
+    padding: 0.75rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #00e732; /* Cor de fundo verde */
+    color: #000; /* Cor do texto preta */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Aparece um cursor de clique */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Transição suave no fundo */
+}
+
+/* Efeito hover no botão de envio */
+button[type="submit"]:hover {
+    background-color: #00b526; /* Cor verde mais escura ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+.text-container {
+    flex: 1; /* O conteúdo ocupa o restante do espaço disponível */
+}
+
+/* Linha horizontal customizada */
+.linha-customizada {
+    border: none; /* Remove a borda padrão */
+    height: 2px; /* Altura da linha */
+    background-color: #00e732; /* Cor verde para a linha */
+    width: 100%; /* A linha ocupa toda a largura */
+    margin-top: 20px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para as seções dentro do conteúdo */
+section {
+    margin-bottom: 1rem; /* Margem inferior entre as seções */
+}
+
+/* Estilos para os títulos das seções */
+h2 {
+    color: #00e732; /* Cor verde para os títulos */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilos para os botões dentro do conteúdo */
+button {
+    padding: 0.75rem; /* Espaçamento interno */
+    background-color: #00e732; /* Cor verde de fundo */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 1rem; /* Margem inferior */
+    margin-top: 15px; /* Margem superior */
+    transition: background-color 0.3s ease; /* Transição suave na cor do fundo */
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    background-color: #00b526; /* Cor verde mais escura ao passar o mouse */
+}
+
+/* Estilos para responsividade em telas pequenas */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        gap: 1.5rem; /* Reduz o espaçamento entre os elementos */
+    }
+
+    .formulario {
+        max-width: 100%; /* O formulário ocupa 100% da largura da tela */
+        margin: 0 auto; /* Centraliza o formulário */
+    }
+}
+
+/* Estilos para o rodapé da página */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+}

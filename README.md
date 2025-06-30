@@ -19,10 +19,6 @@ vozes-do-mundo/
 │ ├── vozes.png # Imagem do banner fictício (para dar aquele charme)
 └── README.md # Este arquivo de documentação (você está lendo ele! 😎)
 
-markdown
-Copiar
-Editar
-
 ## 💡 Como Contribuir (Se Você Quiser)
 
 Este projeto é feito para aprendizado, mas se você quiser brincar com ele ou fazer alguma contribuição, fique à vontade! Aqui estão os passos para contribuir:
@@ -30,14 +26,14 @@ Este projeto é feito para aprendizado, mas se você quiser brincar com ele ou f
 1. **Fork** o repositório para sua própria conta.
 2. Crie uma **branch** para adicionar suas melhorias ou funcionalidades:
 
-    ```bash
+    ```
     git checkout -b feature/minha-melhora
     ```
 
 3. Faça suas alterações.
 4. **Commit** suas mudanças:
 
-    ```bash
+    ```
     git commit -am "Adicionando uma melhoria incrível!"
     ```
 
